@@ -23,4 +23,3 @@ The model integrates the following MODIS data products:
 * **`01_Data_Download`**: Scripts for automated downloading of MODIS products using NASA Earthdata API.
 * **`02_Data_Processing`**: Data cleaning, cloud masking, and spatial resampling (downscaling) to 250m.
 * **`03_Model_Development`**: Training and hyperparameter optimization for the **XGBoost (XGB)** model.
-* **`04_Figures`**: Code for generating spatial distribution maps, scatter plots, and time-series analysis.
