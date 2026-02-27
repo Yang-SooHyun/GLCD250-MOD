@@ -1,7 +1,7 @@
 # GLCD250-MOD: Global Lakes Chlorophyll-a Daily 250 m using MODIS
 
 ## 🌟 Project Overview
-This project establishes a robust relationship between **MOD09 Surface Reflectance** and **MODIS Terra L3 Chl-a** products to generate a **daily Chlorophyll-a (Chl-a)** dataset at a **250 m resolution** for **global inland lakes**. By leveraging machine learning, it transforms high-frequency MODIS observations into high-resolution water quality data.
+This project establishes a robust relationship between **MOD09 Surface Reflectance** and **MODIS Terra L3 Chl-a** products to generate a **daily Chlorophyll-a (Chl-a)** dataset at a **250 m resolution** for **global inland lakes**. By leveraging deep learning, it transforms high-frequency MODIS observations into high-resolution water quality data.
 
 ## 🚀 Key Features
 * **Resolution**: Provides **250 m** spatial resolution and **daily** temporal resolution.
