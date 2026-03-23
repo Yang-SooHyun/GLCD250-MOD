@@ -32,6 +32,13 @@ The GLCD250-MOD framework uses the following MODIS products for model developmen
 - **MODIS-Terra Level-3 mapped global products**: Remote sensing reflectance (Rrs) and chlorophyll-a products (4.6 km)  
   - https://oceandata.sci.gsfc.nasa.gov/l3/
 
+## Workflow
+
+1. Download MODIS input products
+2. Build application and development datasets
+3. Train and evaluate the model
+4. Apply the trained model to generate GLCD250-MOD NetCDF outputs
+
 ## Project Structure
 
 ```bash
