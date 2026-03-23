@@ -1,23 +1,43 @@
-## 🌟 Project Overview
-This project establishes a robust relationship between **MOD09 Surface Reflectance** and **MODIS Terra L3 Chl-a** products to generate a **daily Chlorophyll-a (Chl-a)** dataset at a **250 m resolution** for **global inland lakes**. By leveraging deep learning, it transforms high-frequency MODIS observations into high-resolution water quality data.
+# GLCD250-MOD: Global Daily 250 m Chlorophyll-a Dataset for Inland Lakes based on MODIS
 
-## 🚀 Key Features
-* **Resolution**: Provides **250 m** spatial resolution and **daily** temporal resolution.
-* **Global Coverage**: Specifically designed and validated for **global lakes**.
-* **Data Integration**: Utilizes the synergy between **MOD09 (Reflectance)** and **MODIS Terra L3 (Standard Chl-a product)**.
-* **Deep Learning-based Estimation**: Employs an optimized **transformer based hierarchical deep learning** model to capture complex relationships between reflectance and water quality parameters.
+This repository provides the source code used to generate **GLCD250-MOD**, a **global daily 250 m chlorophyll-a (Chl-a) dataset for inland lakes based on MODIS**.
 
-## 🛠 Tech Stack
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Deep Learning](https://img.shields.io/badge/Deep%20Learning-FF6F00?style=for-the-badge&logo=pytorch&logoColor=white)
-![Transformer](https://img.shields.io/badge/Transformer-8A2BE2?style=for-the-badge)
+The archived dataset is released on Zenodo as: **GLCD250-MOD: Global Lakes Chlorophyll-a Daily 250 m based on MODIS**
 
-## 📊 Data Sources
-The model integrates the following MODIS data products:
-* **MOD09GQ / MOD09GA**: Surface Reflectance (250m / 500m)
-* **MODIS Terra L3**: Chl-a (4.6km)
+## Overview
 
-## 📂 Project Structure
-* **`01_Data_Download`**: Scripts for automated downloading of MODIS products using NASA Earthdata API.
-* **`02_Data_Processing`**: Data cleaning, cloud masking, and spatial resampling (downscaling) to 250m.
-* **`03_Model_Development`**: Training and hyperparameter optimization for the **transformer based hierarchical deep learning** model.
+GLCD250-MOD is a **global daily 250 m chlorophyll-a dataset for inland lakes** derived from **Terra MODIS observations** for the period **2000–2024**. The dataset is produced using **MOD09 surface reflectance (SR)** as model input and **MODIS Terra Level-3 remote-sensing reflectance (Rrs) and chlorophyll-a (Chl-a) products** for model development.
+
+The model is a **transformer-based hierarchical deep learning framework** that predicts Chl-a through an intermediate estimation of Rrs. After quality control and valid-pixel screening, the dataset provides Chl-a estimates for **465,966 inland lakes worldwide**.
+
+## Key Features
+
+- **Spatial resolution**: 250 m
+- **Temporal resolution**: Daily
+- **Coverage**: Global inland lakes
+- **Modeling approach**: Transformer-based hierarchical deep learning
+
+## Authors
+
+- SooHyun Yang, HaeDeun Lee, Taeho Kim, YoonKyung Cha
+
+## Data Sources
+
+The GLCD250-MOD framework uses the following MODIS products for model development and dataset generation:
+
+- **MOD09GQ / MOD09GA**: Surface reflectance products (250 m / 500 m)  
+  - MOD09GQ: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/MOD09GQ  
+  - MOD09GA: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/MOD09GA
+
+- **MODIS-Terra Level-3 mapped global products**: Remote sensing reflectance (Rrs) and chlorophyll-a products (4.6 km)  
+  - https://oceandata.sci.gsfc.nasa.gov/l3/
+
+## Project Structure
+
+```bash
+GLCD250-MOD/
+├── 01_Data_Download/        # Download, mask, and organize MODIS input products
+├── 02_Data_Processing/      # Construct application and development datasets through spatial matching, filtering, and feature engineering
+├── 03_Model_Development/    # Define, train, and evaluate models, apply the trained model to application datasets, and generate NetCDF outputs
+├── requirements.txt         # Python package requirements
+└── README.md
