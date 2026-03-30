@@ -35,6 +35,10 @@ The GLCD250-MOD framework uses the following MODIS products for model developmen
 3. Train and evaluate the model
 4. Apply the trained model to generate GLCD250-MOD NetCDF outputs
 
+## Authors
+
+- SooHyun Yang, HaeDeun Lee, Taeho Kim, YoonKyung Cha
+
 ## Project Structure
 
 ```bash
@@ -44,7 +48,3 @@ GLCD250-MOD/
 ├── 03_Model_Development/    # Define, train, and evaluate models, apply the trained model to application datasets, and generate NetCDF outputs
 ├── requirements.txt         # Python package requirements
 └── README.md
-
-## Authors
-
-- SooHyun Yang, HaeDeun Lee, Taeho Kim, YoonKyung Cha
