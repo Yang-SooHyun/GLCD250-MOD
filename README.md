@@ -17,10 +17,6 @@ The model is a **transformer-based hierarchical deep learning framework** that p
 - **Coverage**: Global inland lakes
 - **Modeling approach**: Transformer-based hierarchical deep learning
 
-## Authors
-
-- SooHyun Yang, HaeDeun Lee, Taeho Kim, YoonKyung Cha
-
 ## Data Sources
 
 The GLCD250-MOD framework uses the following MODIS products for model development and dataset generation:
@@ -48,3 +44,7 @@ GLCD250-MOD/
 ├── 03_Model_Development/    # Define, train, and evaluate models, apply the trained model to application datasets, and generate NetCDF outputs
 ├── requirements.txt         # Python package requirements
 └── README.md
+
+## Authors
+
+- SooHyun Yang, HaeDeun Lee, Taeho Kim, YoonKyung Cha
