@@ -20,6 +20,19 @@ By providing Chl-a at finer spatial resolution than existing global products, GL
 
 ---
 
+## 📂 Repository Structure
+
+```bash
+GLCD250-MOD/
+├── 01_Data_Download/        # Download and organize MODIS products
+├── 02_Data_Processing/      # Quality control, masking, spatial matching, and feature generation
+├── 03_Model_Development/    # Model definition, training, evaluation, and product generation
+├── requirements.txt         # Python package requirements
+└── README.md
+```
+
+---
+
 ## 📥 Data Sources
 
 GLCD250-MOD was developed using the following MODIS products:
@@ -40,13 +53,13 @@ These products were used as reference data for model training and evaluation.
 
 ---
 
-## ⚙️ Method Summary
+## 🛠️ Method Summary
 
 GLCD250-MOD was generated using a **transformer-based hierarchical deep learning model** developed from MODIS surface reflectance and MODIS Terra Level-3 products. The model was designed to estimate **Rrs as an intermediate variable** and then predict **Chl-a** as the final target variable. This framework was used to produce spatially detailed daily Chl-a estimates for inland lakes worldwide.
 
 ---
 
-## 🔄 Workflow
+## ▶️ Workflow
 
 The overall workflow is summarized as follows:
 
@@ -56,19 +69,6 @@ The overall workflow is summarized as follows:
 4. Train and evaluate the Chl-a estimation model
 5. Apply the trained model to generate global 250 m Chl-a outputs
 6. Export the final GLCD250-MOD products
-
----
-
-## 📂 Repository Structure
-
-```bash
-GLCD250-MOD/
-├── 01_Data_Download/        # Download and organize MODIS products
-├── 02_Data_Processing/      # Quality control, masking, spatial matching, and feature generation
-├── 03_Model_Development/    # Model definition, training, evaluation, and product generation
-├── requirements.txt         # Python package requirements
-└── README.md
-```
 
 ---
 
