@@ -106,5 +106,5 @@ GLCD250-MOD/
 
 ## Citation
 
-Yang, S., Lee, H., Lee, G., Gu, T., Shin, J., Kim, T., & Cha, Y. (2026). GLCD250-MOD: Global Daily 250 m Chlorophyll-a Dataset for Inland Lakes based on MODIS. _Scientific Data_ [In review].
+Yang, S., Lee, H., Lee, G., Gu, T., Shin, J., Kim, T., & Cha, Y. (2026). GLCD250-MOD: Global Daily 250 m Chlorophyll-a Dataset for Inland Lakes based on MODIS. _Scientific Data_. [In review].
 
