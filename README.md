@@ -99,13 +99,12 @@ GLCD250-MOD/
 
 ## Authors
 
-* SooHyun Yang
-* HaeDeun Lee
-* Taeho Kim
-* YoonKyung Cha
+* SooHyun Yang — University of Seoul, ghdns95@uos.ac.kr
+* HaeDeun Lee — University of Seoul, leehaed@uos.ac.kr
+* Taeho Kim — University of Michigan - Ann Arbor, theokim@umich.edu
+* YoonKyung Cha — University of Seou. ykcha@uos.ac.kr
 
 ## Citation
 
-If you use this repository or the GLCD250-MOD dataset, please cite the archived dataset and the associated manuscript.
+Yang S., Lee H., Lee G., Gu T., Shin J., Kim T., Cha Y. (2026). GLCD250-MOD: Global Daily 250 m Chlorophyll-a Dataset for Inland Lakes based on MODIS. Scientific Data [In review].
 
-[Add manuscript DOI here if available]
