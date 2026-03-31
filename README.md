@@ -78,7 +78,7 @@ GLCD250-MOD was generated using a **transformer-based hierarchical deep learning
 The overall workflow is summarized as follows:
 
 1. Download MODIS input products
-2. Apply quality control, masking, and preprocessing
+2. Apply quality control, quality assurance, masking, and preprocessing
 3. Construct training and application datasets
 4. Train and evaluate the Chl-a estimation model
 5. Apply the trained model to generate global 250 m Chl-a outputs
