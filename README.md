@@ -47,18 +47,18 @@ The repository documents the data generation workflow and supports reproducibili
 
 ---
 
-## 🛰️ Data sources
+## 📥 Data sources
 
 GLCD250-MOD was developed using the following MODIS products:
 
-### MODIS surface reflectance products
+### 🛰️ MODIS surface reflectance products
 
 * **MOD09GQ**: Terra Surface Reflectance Daily L2G Global 250 m
 * **MOD09GA**: Terra Surface Reflectance Daily L2G Global 500 m and 1 km
 
 These products were used to construct the input variables for global 250 m Chl-a estimation.
 
-### Terra MODIS Level-3 Global Mapped Products
+### 🛰️ Terra MODIS Level-3 Global Mapped Products
 
 * **Remote-sensing reflectance (Rrs)**
 * **Chlorophyll-a (Chl-a)**
