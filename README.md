@@ -1,8 +1,8 @@
 # GLCD250-MOD: Global Daily 250 m Chlorophyll-a Dataset for Inland Lakes based on MODIS
 
-This repository provides the source code used to develop **GLCD250-MOD**, a global daily **250 m chlorophyll-a (Chl-a)** dataset for inland lakes based on **MODIS** observations.
+This repository provides the source code used to develop **GLCD250-MOD**, a global **daily 250 m chlorophyll-a (Chl-a)** dataset for inland lakes based on **MODIS**.
 
-GLCD250-MOD provides daily Chl-a concentration (**mg/m³**) for **465,966 lakes** distributed across **six continents** during **2000–2024**.
+GLCD250-MOD provides daily Chl-a concentration (mg/m³) for **465,966 lakes** distributed across six continents during **2000–2024**.
 
 The archived dataset is available on Zenodo under the title:  
 **GLCD250-MOD: Global Lakes Chlorophyll-a Daily 250 m based on MODIS**  
