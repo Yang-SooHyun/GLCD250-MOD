@@ -20,34 +20,7 @@ By providing Chl-a at finer spatial resolution than existing global products, GL
 
 ---
 
-## Repository purpose
-
-This repository contains the code used to:
-
-* download and organize MODIS products
-* preprocess surface reflectance data
-* construct training and application datasets
-* train and evaluate the Chl-a estimation model
-* generate the final GLCD250-MOD outputs
-
-The repository documents the data generation workflow and supports reproducibility of the GLCD250-MOD dataset.
-
----
-
-## Dataset summary
-
-* **Dataset name**: GLCD250-MOD
-* **Variable**: Chlorophyll-a (Chl-a)
-* **Unit**: mg/m³
-* **Spatial resolution**: 250 m
-* **Temporal resolution**: Daily
-* **Temporal coverage**: 2000–2024
-* **Spatial coverage**: Global inland lakes
-* **Number of lakes**: 465,966
-
----
-
-## 📥 Data sources
+## 📥 Data Sources
 
 GLCD250-MOD was developed using the following MODIS products:
 
@@ -67,13 +40,13 @@ These products were used as reference data for model training and evaluation.
 
 ---
 
-## ⚙️ Method summary
+## ⚙️ Method Summary
 
 GLCD250-MOD was generated using a **transformer-based hierarchical deep learning model** developed from MODIS surface reflectance and MODIS Terra Level-3 products. The model was designed to estimate **Rrs as an intermediate variable** and then predict **Chl-a** as the final target variable. This framework was used to produce spatially detailed daily Chl-a estimates for inland lakes worldwide.
 
 ---
 
-## 🔄 Processing workflow
+## 🔄 Workflow
 
 The overall workflow is summarized as follows:
 
@@ -86,7 +59,7 @@ The overall workflow is summarized as follows:
 
 ---
 
-## 📂 Repository structure
+## 📂 Repository Structure
 
 ```bash
 GLCD250-MOD/
@@ -111,4 +84,3 @@ Yang, S., Lee, H., Lee, G., Gu, T., Shin, J., Kim, T., & Cha, Y. (2026). GLCD25
 * HaeDeun Lee — University of Seoul, leehaed@uos.ac.kr
 * Taeho Kim — University of Michigan - Ann Arbor, theokim@umich.edu
 * YoonKyung Cha — University of Seoul. ykcha@uos.ac.kr
-
