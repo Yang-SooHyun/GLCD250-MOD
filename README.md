@@ -5,8 +5,7 @@ This repository provides the source code used to develop **GLCD250-MOD**, a glob
 GLCD250-MOD provides daily Chl-a concentration (mg/m³) for **465,966 lakes** distributed across six continents during **2000–2024**.
 
 The archived dataset is available on Zenodo under the title:  
-**GLCD250-MOD: Global Lakes Chlorophyll-a Daily 250 m based on MODIS**  
-[https://doi.org/10.5281/zenodo.18950636]
+**[GLCD250-MOD: Global Lakes Chlorophyll-a Daily 250 m based on MODIS](https://doi.org/10.5281/zenodo.18950636)**
 
 ---
 
@@ -33,18 +32,18 @@ GLCD250-MOD/
 
 ---
 
-## 📥 Data Sources
+## 📥 Data sources
 
 GLCD250-MOD was developed using the following MODIS products:
 
 ### 🛰️ MODIS surface reflectance products
 
-* **MOD09GQ**: Terra Surface Reflectance Daily L2G Global 250 m
-* **MOD09GA**: Terra Surface Reflectance Daily L2G Global 500 m and 1 km
+* [**MOD09GQ**](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/MOD09GQ): Terra Surface Reflectance Daily L2G Global 250 m
+* [**MOD09GA**](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/MOD09GA): Terra Surface Reflectance Daily L2G Global 500 m and 1 km
 
 These products were used to construct the input variables for global 250 m Chl-a estimation.
 
-### 🛰️ Terra MODIS Level-3 Global Mapped Products
+### 🛰️ [Terra MODIS Level-3 global mapped products](https://oceandata.sci.gsfc.nasa.gov/l3/)
 
 * **Remote-sensing reflectance (Rrs)**
 * **Chlorophyll-a (Chl-a)**
@@ -63,8 +62,8 @@ GLCD250-MOD was generated using a **transformer-based hierarchical deep learning
 
 The overall workflow is summarized as follows:
 
-1. Download MODIS input products
-2. Apply quality control, quality assurance, masking, and preprocessing
+1. Download and organize MODIS products
+2. Apply quality control, quality assurance, masking, and feature engineering
 3. Construct training and application datasets
 4. Train and evaluate the Chl-a estimation model
 5. Apply the trained model to generate global 250 m Chl-a outputs
