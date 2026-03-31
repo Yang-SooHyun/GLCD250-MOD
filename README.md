@@ -4,7 +4,7 @@ This repository provides the source code used to develop **GLCD250-MOD**, a glob
 
 GLCD250-MOD provides daily Chl-a concentration (mg/m³) for **465,966 lakes** distributed across six continents during **2000–2024**.
 
-The archived dataset is available on Zenodo: 
+The archived dataset is available on Zenodo:     
 **[GLCD250-MOD: Global Lakes Chlorophyll-a Daily 250 m based on MODIS](https://doi.org/10.5281/zenodo.18950636)**
 
 ---
