@@ -29,7 +29,7 @@ This repository contains the code used to:
 - train and evaluate the Chl-a estimation model
 - generate the final GLCD250-MOD outputs
 
-The repository is intended to document the data generation workflow and support reproducibility of the GLCD250-MOD dataset.
+The repository documents the data generation workflow and supports reproducibility of the GLCD250-MOD dataset.
 
 ---
 
