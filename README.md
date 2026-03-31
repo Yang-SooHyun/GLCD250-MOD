@@ -97,12 +97,16 @@ GLCD250-MOD/
 └── README.md
 ```
 
+---
+
 ## Contact
 
 * SooHyun Yang — University of Seoul, ghdns95@uos.ac.kr
 * HaeDeun Lee — University of Seoul, leehaed@uos.ac.kr
 * Taeho Kim — University of Michigan - Ann Arbor, theokim@umich.edu
 * YoonKyung Cha — University of Seou. ykcha@uos.ac.kr
+
+---
 
 ## References
 
