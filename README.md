@@ -10,7 +10,7 @@ The archived dataset is available on Zenodo under the title:
 
 ---
 
-## Overview
+## 🚀 Overview
 
 Algal blooms affect water quality, lake ecosystems, and human health, highlighting the need for high-resolution monitoring of inland lakes across both space and time. Because **chlorophyll-a (Chl-a)** is widely used as a surrogate indicator of phytoplankton biomass, it provides a useful basis for quantifying algal bloom dynamics.
 
@@ -47,7 +47,7 @@ The repository documents the data generation workflow and supports reproducibili
 
 ---
 
-## Data sources
+## 🛰️ Data sources
 
 GLCD250-MOD was developed using the following MODIS products:
 
@@ -67,13 +67,13 @@ These products were used as reference data for model training and evaluation.
 
 ---
 
-## Method summary
+## ⚙️ Method summary
 
 GLCD250-MOD was generated using a **transformer-based hierarchical deep learning model** developed from MODIS surface reflectance and MODIS Terra Level-3 products. The model was designed to estimate **Rrs as an intermediate variable** and then predict **Chl-a** as the final target variable. This framework was used to produce spatially detailed daily Chl-a estimates for inland lakes worldwide.
 
 ---
 
-## Processing workflow
+## 🔄 Processing workflow
 
 The overall workflow is summarized as follows:
 
@@ -86,7 +86,7 @@ The overall workflow is summarized as follows:
 
 ---
 
-## Repository structure
+## 📂 Repository structure
 
 ```bash
 GLCD250-MOD/
@@ -99,16 +99,16 @@ GLCD250-MOD/
 
 ---
 
-## Contact
+## 📚 References
+
+Yang, S., Lee, H., Lee, G., Gu, T., Shin, J., Kim, T., & Cha, Y. (2026). GLCD250-MOD: Global Daily 250 m Chlorophyll-a Dataset for Inland Lakes based on MODIS. _Scientific Data_. [In review].
+
+---
+
+## 📬 Contact
 
 * SooHyun Yang — University of Seoul, ghdns95@uos.ac.kr
 * HaeDeun Lee — University of Seoul, leehaed@uos.ac.kr
 * Taeho Kim — University of Michigan - Ann Arbor, theokim@umich.edu
 * YoonKyung Cha — University of Seoul. ykcha@uos.ac.kr
-
----
-
-## References
-
-Yang, S., Lee, H., Lee, G., Gu, T., Shin, J., Kim, T., & Cha, Y. (2026). GLCD250-MOD: Global Daily 250 m Chlorophyll-a Dataset for Inland Lakes based on MODIS. _Scientific Data_. [In review].
 
