@@ -4,8 +4,9 @@ This repository provides the source code used to develop **GLCD250-MOD**, a glob
 
 GLCD250-MOD provides daily Chl-a concentration (**mg/m³**) for **465,966 lakes** distributed across **six continents** during **2000–2024**.
 
-The archived dataset is available on **Zenodo** under the title:  
-**GLCD250-MOD: Global Lakes Chlorophyll-a Daily 250 m based on MODIS**
+The archived dataset is available on Zenodo under the title:  
+**GLCD250-MOD: Global Lakes Chlorophyll-a Daily 250 m based on MODIS**  
+[https://doi.org/10.5281/zenodo.18950636]
 
 ---
 
@@ -23,11 +24,11 @@ By providing Chl-a at finer spatial resolution than existing global products, GL
 
 This repository contains the code used to:
 
-- download and organize MODIS products
-- preprocess surface reflectance data
-- construct development and application datasets
-- train and evaluate the Chl-a estimation model
-- generate the final GLCD250-MOD outputs
+* download and organize MODIS products
+* preprocess surface reflectance data
+* construct training and application datasets
+* train and evaluate the Chl-a estimation model
+* generate the final GLCD250-MOD outputs
 
 The repository documents the data generation workflow and supports reproducibility of the GLCD250-MOD dataset.
 
@@ -35,14 +36,14 @@ The repository documents the data generation workflow and supports reproducibili
 
 ## Dataset summary
 
-- **Dataset name**: GLCD250-MOD
-- **Variable**: Chlorophyll-a (Chl-a)
-- **Unit**: mg/m³
-- **Spatial resolution**: 250 m
-- **Temporal resolution**: Daily
-- **Temporal coverage**: 2000–2024
-- **Spatial coverage**: Global inland lakes
-- **Number of lakes**: 465,966
+* **Dataset name**: GLCD250-MOD
+* **Variable**: Chlorophyll-a (Chl-a)
+* **Unit**: mg/m³
+* **Spatial resolution**: 250 m
+* **Temporal resolution**: Daily
+* **Temporal coverage**: 2000–2024
+* **Spatial coverage**: Global inland lakes
+* **Number of lakes**: 465,966
 
 ---
 
@@ -51,14 +52,16 @@ The repository documents the data generation workflow and supports reproducibili
 GLCD250-MOD was developed using the following MODIS products:
 
 ### MODIS surface reflectance products
-- **MOD09GQ**: Terra Surface Reflectance Daily L2G Global 250 m
-- **MOD09GA**: Terra Surface Reflectance Daily L2G Global 500 m and 1 km
+
+* **MOD09GQ**: Terra Surface Reflectance Daily L2G Global 250 m
+* **MOD09GA**: Terra Surface Reflectance Daily L2G Global 500 m and 1 km
 
 These products were used to construct the input variables for global 250 m Chl-a estimation.
 
 ### Terra MODIS Level-3 Global Mapped Products
-- **Remote-sensing reflectance (Rrs)**
-- **Chlorophyll-a (Chl-a)**
+
+* **Remote-sensing reflectance (Rrs)**
+* **Chlorophyll-a (Chl-a)**
 
 These products were used as reference data for model training and evaluation.
 
@@ -74,12 +77,12 @@ GLCD250-MOD was generated using a **transformer-based hierarchical deep learning
 
 The overall workflow is summarized as follows:
 
-1. Download MODIS input products  
-2. Apply quality control, masking, and preprocessing  
-3. Construct development and application datasets  
-4. Train and evaluate the Chl-a estimation model  
-5. Apply the trained model to generate global 250 m Chl-a outputs  
-6. Export the final GLCD250-MOD products  
+1. Download MODIS input products
+2. Apply quality control, masking, and preprocessing
+3. Construct training and application datasets
+4. Train and evaluate the Chl-a estimation model
+5. Apply the trained model to generate global 250 m Chl-a outputs
+6. Export the final GLCD250-MOD products
 
 ---
 
@@ -92,3 +95,17 @@ GLCD250-MOD/
 ├── 03_Model_Development/    # Model definition, training, evaluation, and product generation
 ├── requirements.txt         # Python package requirements
 └── README.md
+```
+
+## Authors
+
+* SooHyun Yang
+* HaeDeun Lee
+* Taeho Kim
+* YoonKyung Cha
+
+## Citation
+
+If you use this repository or the GLCD250-MOD dataset, please cite the archived dataset and the associated manuscript.
+
+[Add manuscript DOI here if available]
