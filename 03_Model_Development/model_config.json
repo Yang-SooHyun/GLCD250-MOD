@@ -1,0 +1,106 @@
+{
+  "model_version": "ver2",
+  "run_name": "bs1024_md512_nh8_nl4_lr0.0002_dr0.1",
+  "selected_epoch": 105,
+  "checkpoint_sha256": "1c1e097a03451b7a0a1c0ee64dab151b3f3063a87faaf6ce7b422ba564652235",
+  "ocx_config": {
+    "low_ratio_col": "max_Rrs_412_Rrs_443_Rrs_488/Rrs_547",
+    "high_ratio_col": "max_Rrs_412_Rrs_443_Rrs_488/Rrs_547",
+    "low_coefs": [
+      -0.1447145689870766,
+      -4.492954532506248,
+      1.564467706200566,
+      -0.13256524097893285,
+      -0.2881587983489866
+    ],
+    "high_coefs": [
+      0.2138390065040921,
+      -2.475872954794575,
+      1.9120939052484278,
+      1.177784714813589,
+      -1.6250661285053818
+    ],
+    "t1": 0.7977964483883642,
+    "t2": 3.7370490817478688,
+    "transition_basis": "low",
+    "target_filter": "0 < insitu_Chl-a < 200"
+  },
+  "columns_dict": {
+    "seq_input": [
+      [
+        "SR_469",
+        "SR_555",
+        "SR_645",
+        "SR_859",
+        "SR_1240",
+        "SR_1640",
+        "SR_2130"
+      ],
+      [
+        "SR_469_Rrs",
+        "SR_555_Rrs",
+        "SR_645_Rrs",
+        "SR_859_Rrs",
+        "SR_1240_Rrs",
+        "SR_1640_Rrs",
+        "SR_2130_Rrs"
+      ]
+    ],
+    "aux_input": [
+      "Ratio_blue",
+      "Ratio_blue_SR_Rrs",
+      "FAI",
+      "FAI_SR_Rrs",
+      "NDVI",
+      "NDVI_SR_Rrs",
+      "DOY_sin",
+      "DOY_cos",
+      "season_sin",
+      "season_cos"
+    ],
+    "mid_rrs": [
+      "Rrs_412",
+      "Rrs_443",
+      "Rrs_469",
+      "Rrs_488",
+      "Rrs_531",
+      "Rrs_547",
+      "Rrs_555",
+      "Rrs_645",
+      "Rrs_667",
+      "Rrs_678"
+    ],
+    "target": [
+      "log_Chl-a"
+    ]
+  },
+  "hyperparams": {
+    "bs": 1024,
+    "md": 512,
+    "nh": 8,
+    "nl": 4,
+    "lr": 0.0002,
+    "dr": 0.1,
+    "run_index": 6,
+    "fd": 2048,
+    "epochs": 300,
+    "rrs_warmup_epochs": 5,
+    "l3_warmup_epochs": 10,
+    "insitu_batch_size": 128,
+    "insitu_update_interval": 100,
+    "selection_strategy": "target_then_insitu",
+    "selection_start_epoch": 11,
+    "target_stage_patience": 20,
+    "target_min_delta": 0.00001,
+    "force_selection_epoch": 80,
+    "selection_stage_patience": 20,
+    "selection_min_delta": 0.00001,
+    "selection_insitu_alpha": 0.1,
+    "insitu_validation_metric": "lake_macro_mse",
+    "split_seed": 42,
+    "num_ocx_features": 1
+  },
+  "training_validation_metric": "lake_macro_mse",
+  "final_epoch_validation_metric": "observation_mse",
+  "selection_metric": "val_loss_target + 0.1 * val_loss_insitu_observation"
+}

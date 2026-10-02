@@ -1,0 +1,40 @@
+{
+  "description": "Configurable Cartesian search for new experiments; not a record of previously executed combinations.",
+  "grid": {
+    "bs": [
+      512,
+      1024,
+      2048
+    ],
+    "md": [
+      64,
+      128,
+      256,
+      512
+    ],
+    "nh": [
+      4,
+      8,
+      16
+    ],
+    "nl": [
+      4,
+      6,
+      8
+    ],
+    "lr": [
+      0.0001,
+      0.0002,
+      0.0003
+    ],
+    "dr": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "ff_factor": [
+      2,
+      4
+    ]
+  }
+}
